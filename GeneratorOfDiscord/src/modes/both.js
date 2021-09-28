@@ -1,7 +1,7 @@
 const Sniper = require('../lib/Client');
 
 module.exports = async () => {
-   // Main
+   // 
    let main = false;
    if (!settings.tokens.main) return logger.critical(constants.noMain);
 
