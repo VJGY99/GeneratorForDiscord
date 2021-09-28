@@ -3,7 +3,7 @@ const Sniper = require('../lib/Client');
 module.exports = async () => {
    if (!settings.tokens.main) return logger.critical(constants.noMain);
 
-   // 
+   
    await new Promise((fulfill) => {
       setTimeout(async () => {
          let client = await new Sniper().init(settings.tokens.main);
