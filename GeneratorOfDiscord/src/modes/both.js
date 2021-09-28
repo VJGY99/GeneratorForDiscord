@@ -41,7 +41,7 @@ module.exports = async () => {
       });
    }
 
-   // 
+   
    if (!main && alts <= 0) return;
    if (alts <= 0 && (!settings.tokens.alts?.length || settings.tokens.alts[0] != '')) {
       logger.warn(constants.bothModeNoAlts);
