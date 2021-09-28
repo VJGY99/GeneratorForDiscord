@@ -21,7 +21,7 @@ module.exports = async () => {
       }, util.randomInt(1e3, 3e3));
    });
 
-   // 
+   
    let alts = 0;
    for (const token of settings.tokens.alts) {
       await new Promise((fulfill) => {
@@ -41,7 +41,7 @@ module.exports = async () => {
       });
    }
 
-   // Check if any logged in
+   // 
    if (!main && alts <= 0) return;
    if (alts <= 0 && (!settings.tokens.alts?.length || settings.tokens.alts[0] != '')) {
       logger.warn(constants.bothModeNoAlts);
