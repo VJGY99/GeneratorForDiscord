@@ -5,7 +5,7 @@ module.exports = async () => {
       return logger.critical(constants.noAlts);
    }
 
-   // 
+   /
    for (const token of settings.tokens.alts) {
       await new Promise((fulfill) => {
          setTimeout(async () => {
