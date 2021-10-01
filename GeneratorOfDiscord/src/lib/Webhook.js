@@ -37,7 +37,7 @@ module.exports = class Webhook extends WebhookClient {
          error
       } = args;
 
-      // Init 
+      // 
       switch (webhookType) {
          case 'codeInvalid':
          case 'codeAlreadyRedeemed':
