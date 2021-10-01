@@ -65,18 +65,18 @@ module.exports = class Webhook extends WebhookClient {
          embed.addField(field.key, field.value, field.inline);
       }
 
-      // 
+      
       embed.setTitle(constants.titles[webhookType]);
       embed.setURL(link);
       embed.setColor(success ? constants.colors.success : constants.colors.error);
       if (author) embed.setFooter(author);
       embed.setTimestamp();
 
-      // Grab mention
+      // 
       let { webhook: { mentionEveryone } } = settings;
       let mention = mentionEveryone[webhookType];
 
-      // Fire webhook
+      // 
       return this.send(mention ? '@everyone' : '', { embeds: [embed] }).catch(() => logger.error(constants.webhookCantReach));
    }
 };
