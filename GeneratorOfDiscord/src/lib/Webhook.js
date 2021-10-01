@@ -12,7 +12,7 @@ module.exports = class Webhook extends WebhookClient {
       let fields = [];
       let embed = new MessageEmbed();
 
-      // 
+      
       if ([
          'giveawayWin',
          'codeSuccess',
