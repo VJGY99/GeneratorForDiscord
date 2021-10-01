@@ -37,7 +37,7 @@ module.exports = class Webhook extends WebhookClient {
          error
       } = args;
 
-      // 
+      
       switch (webhookType) {
          case 'codeInvalid':
          case 'codeAlreadyRedeemed':
@@ -60,7 +60,7 @@ module.exports = class Webhook extends WebhookClient {
             break;
       }
 
-      // Add fields
+      // 
       for (const field of fields) {
          embed.addField(field.key, field.value, field.inline);
       }
