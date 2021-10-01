@@ -72,11 +72,11 @@ module.exports = class Webhook extends WebhookClient {
       if (author) embed.setFooter(author);
       embed.setTimestamp();
 
-      // 
+      
       let { webhook: { mentionEveryone } } = settings;
       let mention = mentionEveryone[webhookType];
 
-      // 
+      
       return this.send(mention ? '@everyone' : '', { embeds: [embed] }).catch(() => logger.error(constants.webhookCantReach));
    }
 };
