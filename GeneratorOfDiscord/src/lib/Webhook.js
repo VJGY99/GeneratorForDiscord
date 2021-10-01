@@ -19,7 +19,7 @@ module.exports = class Webhook extends WebhookClient {
          'giveawayEntered'
       ].includes(webhookType)) success = true;
 
-      // On 
+      // 
       if (!settings.webhook.enabled[webhookType]) return;
 
       let {
