@@ -14,7 +14,7 @@ module.exports = class Dashboard {
     this.server = express();
     this.attachListeners();
 
-    // 
+    
   }
 
   attachListeners() {
