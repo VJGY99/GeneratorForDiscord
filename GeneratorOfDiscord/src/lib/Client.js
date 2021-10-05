@@ -10,7 +10,7 @@ module.exports = class Sniper extends Client {
          ClientOptions,
          constants.clientOptions
       ));
-
+//
       ModuleKeys.forEach(m => {
          this[m.toLowerCase()] = new Modules[m](this);
       });
